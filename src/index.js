@@ -10,6 +10,8 @@ import {
 } from "./rewind-button";
 import VerticalVolume from "./vertical-volume";
 
+import './styles.css';
+
 export {
   ForwardFiveButton,
   ForwardTenButton,

@@ -1,7 +1,7 @@
 {
   "name": "shaka-player-ui-controls",
   "version": "1.0.1",
-  "description": "vertical volume, rewind, fast forward controls for shaka player",
+  "description": "Vertical volume slider, rewind, fast forward ui controls for shaka player.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "scripts": {
