@@ -1,9 +1,9 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
+import { terser } from "rollup-plugin-terser";
 import path from 'path';
 import pkg from './package.json';
-const extensions = ['.js'];
 
 //figure out how to build css file to dist folder
 export default 
@@ -21,12 +21,11 @@ export default
     ],
     plugins: [
         postcss({
-            extract: "./dist/styles.css",
-            minimize: true  
+            include: "**/styles.css",
+            extract: path.resolve("dist/styles.css"),
           }),
         commonjs(),
-        resolve({
-            extensions 
-        }),
+        resolve(),
+        terser()
     ]
 };
