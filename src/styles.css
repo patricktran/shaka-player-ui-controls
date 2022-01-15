@@ -1,0 +1,32 @@
+.shaka-vertical-volume-container {
+    position: relative; 
+}
+
+  .shaka-vertical-volume-container:hover .shaka-volume-bar-container {
+    opacity: 1;
+  }
+
+  .shaka-vertical-volume-container  .shaka-mute-button{
+    color: #fff;
+    height: 32px;
+    margin: 1px 6px;
+    padding: 0;
+    background: 0 0;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .shaka-vertical-volume-container .shaka-volume-bar-container{
+    position: absolute;
+    order: initial;
+    width: 100px;
+    top: -58px;
+    left: -35px;
+    transition: all 300ms ease-in-out 100ms;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+  
+  .shaka-vertical-volume-container .shaka-volume-bar-container input{
+    cursor: pointer;
+  }

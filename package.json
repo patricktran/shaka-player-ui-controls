@@ -1,0 +1,43 @@
+{
+  "name": "shaka-player-ui-controls",
+  "version": "1.0.1",
+  "description": "rewind, forward, vertical volume controls for shaka player",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "shaka-player": ">=3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patricktran/shaka-player-ui-controls.git"
+  },
+  "keywords": [
+    "shaka",
+    "shaka player",
+    "shaka controls",
+    "shaka player controls",
+    "shaka player ui",
+    "shaka ui",
+    "shaka ui controls",
+    "shaka player ui controls"
+  ],
+  "author": "Patrick Tran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patricktran/shaka-player-ui-controls/issues"
+  },
+  "homepage": "https://github.com/patricktran/shaka-player-ui-controls#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "13.1.3",
+    "postcss": "8.4.5",
+    "rollup": "2.64.0",
+    "rollup-plugin-postcss": "4.0.2"
+  }
+}
