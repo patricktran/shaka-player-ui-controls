@@ -1,2 +1,91 @@
 # shaka-player-ui-controls
-The missing UI controls package for Shaka Player!  Vertical volume slider, rewind, and fast forward controls.
+The missing UI controls package for Google [Shaka Player](https://github.com/google/shaka-player)! <br/>Vertical volume slider, rewind, and fast forward controls.  
+
+[![NPM](https://img.shields.io/npm/v/shaka-player-ui-controls.svg)](https://www.npmjs.com/package/shaka-player-ui-controls) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+
+## Install  
+
+```bash
+npm install --save shaka-player-ui-controls
+```
+
+⚠️ Also install [Shaka Player](https://github.com/google/shaka-player)
+
+[Shaka Player Documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html)
+
+## Demo  
+Click here to see a demo.
+
+## Usage  
+
+```js
+
+//step 1) import packages/css
+import {
+  Player as ShakaPlayer,
+  ui as ShakaUI,
+} from "shaka-player/dist/shaka-player.ui";
+
+import {
+  ForwardFiveButton,
+  ForwardTenButton,
+  ForwardThirtyButton,
+  RewindFiveButton,
+  RewindTenButton,
+  RewindThirtyButton,
+  VerticalVolume,
+} from "shaka-player-ui-controls";
+
+import "shaka-player-ui-controls/main.css";
+
+//step 2) register elements to ShakaUI
+
+ShakaUI.Controls.registerElement(
+  "vertical_volume",
+  new VerticalVolume.Factory()
+);
+
+ShakaUI.Controls.registerElement("rewind_10", new RewindTenButton.Factory());
+ShakaUI.Controls.registerElement("forward_10", new ForwardTenButton.Factory());
+ShakaUI.Controls.registerElement("rewind_5", new RewindFiveButton.Factory());
+ShakaUI.Controls.registerElement("rewind_30", new RewindThirtyButton.Factory());
+ShakaUI.Controls.registerElement("forward_5", new ForwardFiveButton.Factory());
+ShakaUI.Controls.registerElement(
+  "forward_30",
+  new ForwardThirtyButton.Factory()
+);
+
+//step 3) create your custom ui config
+// https://shaka-player-demo.appspot.com/docs/api/tutorial-ui-customization.html
+
+const uiConfig = {
+  controlPanelElements: [
+    "rewind_5",
+    "rewind_10",
+    "rewind_30",
+    "play_pause",
+    "forward_5",
+    "forward_10",
+    "forward_30",
+    "vertical_volume",
+  ],
+};
+
+...
+
+//step 4) pass in your custom ui config to shaka player
+
+// getting reference to video and video container on DOM
+const video = this.videoComponent.current;
+const videoContainer = this.videoContainer.current;
+
+// initialize shaka player
+var player = new ShakaPlayer(video);
+
+// setting up shaka player UI overlay
+const ui = new shaka.ui.Overlay(player, videoContainer, video);
+
+// pass in custom uiConfig
+ui.configure(uiConfig);
+```

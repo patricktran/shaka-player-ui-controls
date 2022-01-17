@@ -1,4 +1,4 @@
-const { CreateRewindButton } = require("./shared");
+const { CreateRewindButton } = require("./common/functions");
 
 const RewindFiveButton = CreateRewindButton(5, "five");
 RewindFiveButton.Factory = class {

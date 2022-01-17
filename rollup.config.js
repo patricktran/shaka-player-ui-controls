@@ -22,7 +22,7 @@ export default
     plugins: [
         postcss({
             include: "**/styles.css",
-            extract: path.resolve("dist/controls.css"),
+            extract: path.resolve("dist/main.css"),
             minimize: true
           }),
         commonjs(),
