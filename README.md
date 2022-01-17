@@ -7,7 +7,6 @@ The missing UI controls package for Google [Shaka Player](https://github.com/goo
 
 ![screenshot](/shaka-player-ui-controls-screenshot.png?raw=true)
 
-<br />
 
 ## Install  
 
@@ -19,20 +18,14 @@ npm install --save shaka-player-ui-controls
 
 <br />
 
-<br />
-
 ## UI Controls Included  
-<br />
 
 * **Vertical Volume Slider**
-<br />
 
 * **Rewind**: 
   - 5 Seconds
   - 10 Seconds
   - 30 Seconds
-<br />
-<br />
 
 * **Fast Forward**: 
   - 5 Seconds
