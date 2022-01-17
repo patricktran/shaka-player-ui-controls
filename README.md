@@ -17,9 +17,34 @@ npm install --save shaka-player-ui-controls
 
 ⚠️ Also install [Shaka Player](https://github.com/google/shaka-player) - [Shaka Player Documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html)
 
+<br />
+
+<br />
+
+## UI Controls Included  
+<br />
+
+* **Vertical Volume Slider**
+<br />
+
+* **Rewind**: 
+  - 5 Seconds
+  - 10 Seconds
+  - 30 Seconds
+<br />
+<br />
+
+* **Fast Forward**: 
+  - 5 Seconds
+  - 10 Seconds
+  - 30 Seconds
+
+<br />
 
 ## Demo  
 Click here to see a demo.
+
+<br />
 
 ## Usage  
 
