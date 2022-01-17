@@ -7,6 +7,7 @@ The missing UI controls package for Google [Shaka Player](https://github.com/goo
 
 ![screenshot](/shaka-player-ui-controls-screenshot.png?raw=true)
 
+<br />
 
 ## Install  
 
@@ -14,7 +15,7 @@ The missing UI controls package for Google [Shaka Player](https://github.com/goo
 npm install --save shaka-player-ui-controls
 ```
 
-⚠️ Also install [Shaka Player](https://github.com/google/shaka-player) - [Shaka Player Documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html)
+⚠️ Also install [Shaka Player](https://www.npmjs.com/package/shaka-player) - [Shaka Player Documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html)
 
 <br />
 
@@ -35,7 +36,8 @@ npm install --save shaka-player-ui-controls
 <br />
 
 ## Demo  
-Click here to see a demo.
+
+Click [here](https://codesandbox.io/s/shaka-player-ui-controls-h2y49-h2y49) to see a demo on [codesandbox](https://codesandbox.io/s/shaka-player-ui-controls-h2y49-h2y49).
 
 <br />
 
@@ -111,7 +113,7 @@ const videoContainer = document.getElementById('video-container');
 var player = new ShakaPlayer(video);
 
 //setting up shaka player UI overlay
-const ui = new shaka.ui.Overlay(player, videoContainer, video);
+const ui = new ShakaUI.Overlay(player, videoContainer, video);
 
 //pass in custom uiConfig
 ui.configure(uiConfig);
