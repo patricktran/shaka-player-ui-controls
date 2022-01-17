@@ -1,4 +1,4 @@
-const shaka = require("shaka-player/dist/shaka-player.ui.js");
+import shaka from "shaka-player/dist/shaka-player.ui.js";
 
 /**
  * @param {!number} step - in seconds

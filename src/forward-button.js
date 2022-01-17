@@ -1,4 +1,4 @@
-const { CreateForwardButton } = require("./common/functions");
+import { CreateForwardButton } from "./common/functions";
 
 const ForwardFiveButton = CreateForwardButton(5, "five");
 ForwardFiveButton.Factory = class {

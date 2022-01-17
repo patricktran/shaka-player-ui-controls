@@ -1,4 +1,4 @@
-const shaka = require("shaka-player/dist/shaka-player.ui.js");
+import shaka from "shaka-player/dist/shaka-player.ui.js";
 
 const VerticalVolume = class extends shaka.ui.Element {
   constructor(parent, controls) {
