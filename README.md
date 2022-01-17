@@ -3,6 +3,11 @@ The missing UI controls package for Google [Shaka Player](https://github.com/goo
 
 [![NPM](https://img.shields.io/npm/v/shaka-player-ui-controls.svg)](https://www.npmjs.com/package/shaka-player-ui-controls) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+<br />
+
+![screenshot](/shaka-player-ui-controls-screenshot.png?raw=true)
+
+<br />
 
 ## Install  
 
@@ -10,9 +15,8 @@ The missing UI controls package for Google [Shaka Player](https://github.com/goo
 npm install --save shaka-player-ui-controls
 ```
 
-⚠️ Also install [Shaka Player](https://github.com/google/shaka-player)
+⚠️ Also install [Shaka Player](https://github.com/google/shaka-player) - [Shaka Player Documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html)
 
-[Shaka Player Documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html)
 
 ## Demo  
 Click here to see a demo.
@@ -22,6 +26,7 @@ Click here to see a demo.
 ```js
 
 //step 1) import packages/css
+
 import {
   Player as ShakaPlayer,
   ui as ShakaUI,
@@ -39,25 +44,29 @@ import {
 
 import "shaka-player-ui-controls/main.css";
 
-//step 2) register elements to ShakaUI
+//step 2) register control elements to ShakaUI
 
+//vertical volume control
 ShakaUI.Controls.registerElement(
   "vertical_volume",
   new VerticalVolume.Factory()
 );
 
-ShakaUI.Controls.registerElement("rewind_10", new RewindTenButton.Factory());
-ShakaUI.Controls.registerElement("forward_10", new ForwardTenButton.Factory());
+//rewind controls
 ShakaUI.Controls.registerElement("rewind_5", new RewindFiveButton.Factory());
+ShakaUI.Controls.registerElement("rewind_10", new RewindTenButton.Factory());
 ShakaUI.Controls.registerElement("rewind_30", new RewindThirtyButton.Factory());
+
+//fast forward controls
 ShakaUI.Controls.registerElement("forward_5", new ForwardFiveButton.Factory());
+ShakaUI.Controls.registerElement("forward_10", new ForwardTenButton.Factory());
 ShakaUI.Controls.registerElement(
   "forward_30",
   new ForwardThirtyButton.Factory()
 );
 
 //step 3) create your custom ui config
-// https://shaka-player-demo.appspot.com/docs/api/tutorial-ui-customization.html
+//https://shaka-player-demo.appspot.com/docs/api/tutorial-ui-customization.html
 
 const uiConfig = {
   controlPanelElements: [
@@ -76,16 +85,19 @@ const uiConfig = {
 
 //step 4) pass in your custom ui config to shaka player
 
-// getting reference to video and video container on DOM
-const video = this.videoComponent.current;
-const videoContainer = this.videoContainer.current;
+//getting reference to video and video container on DOM
+const video = document.getElementById('video');
+const videoContainer = document.getElementById('video-container');
 
-// initialize shaka player
+//initialize shaka player
 var player = new ShakaPlayer(video);
 
-// setting up shaka player UI overlay
+//setting up shaka player UI overlay
 const ui = new shaka.ui.Overlay(player, videoContainer, video);
 
-// pass in custom uiConfig
+//pass in custom uiConfig
 ui.configure(uiConfig);
 ```
+## License
+
+MIT © [patricktran](https://github.com/patricktran)
