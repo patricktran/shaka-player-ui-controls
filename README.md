@@ -17,7 +17,7 @@ npm install --save shaka-player-ui-controls
 
 ⚠️ Also install [**Shaka Player**](https://www.npmjs.com/package/shaka-player) - [Shaka Player Documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html)  
 
-![screenshot](/shaka-player-logo.png?raw=true) 
+![screenshot](/shaka-player-logo.png?raw=true)
 
 <br />
 
