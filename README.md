@@ -62,7 +62,7 @@ import {
   VerticalVolume,
 } from "shaka-player-ui-controls";
 
-import "shaka-player-ui-controls/main.css";
+import "shaka-player-ui-controls/dist/main.css";
 
 //step 2) register control elements to ShakaUI
 

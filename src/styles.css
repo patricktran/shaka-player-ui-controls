@@ -1,12 +1,17 @@
-.shaka-vertical-volume-container {
+.shaka-video-container .shaka-controls-button-panel{
+  order: initial;
+  overflow: initial;
+}
+
+.shaka-video-container .shaka-vertical-volume-container {
     position: relative; 
 }
 
-  .shaka-vertical-volume-container:hover .shaka-volume-bar-container {
+.shaka-video-container .shaka-vertical-volume-container:hover .shaka-volume-bar-container {
     opacity: 1;
   }
 
-  .shaka-vertical-volume-container  .shaka-mute-button{
+  .shaka-video-container .shaka-vertical-volume-container  .shaka-mute-button{
     color: #fff;
     height: 32px;
     margin: 1px 6px;
@@ -16,7 +21,7 @@
     cursor: pointer;
   }
 
-  .shaka-vertical-volume-container .shaka-volume-bar-container{
+  .shaka-video-container .shaka-vertical-volume-container .shaka-volume-bar-container{
     position: absolute;
     order: initial;
     width: 100px;
@@ -27,6 +32,6 @@
     opacity: 0;
   }
   
-  .shaka-vertical-volume-container .shaka-volume-bar-container input{
+  .shaka-video-container .shaka-vertical-volume-container .shaka-volume-bar-container input{
     cursor: pointer;
   }
