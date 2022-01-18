@@ -1,6 +1,6 @@
 {
   "name": "shaka-player-ui-controls",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Vertical volume slider, rewind, fast forward ui controls for shaka player.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -38,6 +38,7 @@
     "@rollup/plugin-node-resolve": "13.1.3",
     "postcss": "8.4.5",
     "rollup": "2.64.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "4.0.2",
     "rollup-plugin-terser": "^7.0.2"
   }
