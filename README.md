@@ -15,7 +15,9 @@ The missing UI controls package for Google [Shaka Player](https://github.com/goo
 npm install --save shaka-player-ui-controls
 ```
 
-⚠️ Also install [Shaka Player](https://www.npmjs.com/package/shaka-player) - [Shaka Player Documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html)
+⚠️ Also install [**Shaka Player**](https://www.npmjs.com/package/shaka-player) - [Shaka Player Documentation](https://shaka-player-demo.appspot.com/docs/api/tutorial-welcome.html)  
+
+![screenshot](/shaka-player-logo.png?raw=true) 
 
 <br />
 
@@ -51,6 +53,8 @@ import {
   Player as ShakaPlayer,
   ui as ShakaUI,
 } from "shaka-player/dist/shaka-player.ui";
+
+import "shaka-player/dist/controls.css";
 
 import {
   ForwardFiveButton,
@@ -90,9 +94,9 @@ ShakaUI.Controls.registerElement(
 
 const uiConfig = {
   controlPanelElements: [
-    "rewind_5",
-    "rewind_10",
     "rewind_30",
+    "rewind_10",
+    "rewind_5",
     "play_pause",
     "forward_5",
     "forward_10",
