@@ -1,3 +1,7 @@
+# 1.0.7
+
+Refactor CSS to target shaka data attribute
+
 # 1.0.6
 
 Optimize build bundle
