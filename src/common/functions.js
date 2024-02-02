@@ -17,8 +17,9 @@ const CreateRewindButton = (step, stepName) =>
       this.button_ = document.createElement("button");
       this.button_.classList.add("material-icons-round");
       this.button_.classList.add(`shaka-rewind-${stepName}-button`);
+      this.button_.classList.add("shaka-tooltip");
       this.button_.textContent = `replay_${step}`;
-      this.button_.ariaLabel = `Rewind ${step}`;
+      this.button_.ariaLabel = `Rewind ${step}s`;
       this.parent.appendChild(this.button_);
 
       this.eventManager.listen(this.button_, "click", () => {
@@ -27,7 +28,6 @@ const CreateRewindButton = (step, stepName) =>
     }
 
     rewind_() {
-      console.log(this.video.duration);
       if (!this.video.duration || this.video.duration < step) {
         return;
       }
@@ -57,8 +57,9 @@ const CreateForwardButton = (step, stepName) =>
       this.button_ = document.createElement("button");
       this.button_.classList.add("material-icons-round");
       this.button_.classList.add(`shaka-forward-${stepName}-button`);
+      this.button_.classList.add("shaka-tooltip");
       this.button_.textContent = `forward_${step}`;
-      this.button_.ariaLabel = `Forward ${step}`;
+      this.button_.ariaLabel = `Forward ${step}s`;
       this.parent.appendChild(this.button_);
 
       this.eventManager.listen(this.button_, "click", () => {

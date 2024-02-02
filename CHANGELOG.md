@@ -1,3 +1,8 @@
+# 1.0.9
+
+Add tooltips
+Upgrade shakra player dependency to 4.7.9
+
 # 1.0.8
 
 Refactor CSS to target shaka data attribute
