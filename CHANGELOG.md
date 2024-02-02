@@ -1,7 +1,6 @@
-# 1.0.9
+# 1.0.11
 
 Add tooltips
-Upgrade shakra player dependency to 4.7.9
 
 # 1.0.8
 
